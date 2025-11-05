@@ -1,15 +1,10 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, #fff0cc, #ffe5b4);
-  background-image: url('imagenes'); /* puedes poner cualquier imagen de tu carpeta */
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-color: #fff4e1; /* color crema claro */
   margin: 0;
   padding: 0;
   color: #333;
 }
-
 /* Encabezado */
 header {
   background: rgba(255, 123, 0, 0.9);
@@ -48,10 +43,11 @@ main {
 }
 
 .galeria img {
-  width: 90%;
+  width: 200px;
+  height: 150px;
+  object-fit: cover;   
   border-radius: 12px;
-  margin: 10px 0;
-  transition: transform 0.3s ease;
+  margin: 10px;
 }
 
 .galeria img:hover {
