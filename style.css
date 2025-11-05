@@ -1,18 +1,25 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fffaf3;
+  background: linear-gradient(to bottom right, #fff0cc, #ffe5b4);
+  background-image: url('imagenes'); /* puedes poner cualquier imagen de tu carpeta */
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   color: #333;
 }
 
+/* Encabezado */
 header {
-  background: linear-gradient(90deg, #ff7b00, #ffb347);
+  background: rgba(255, 123, 0, 0.9);
   color: white;
   text-align: center;
   padding: 20px 0;
+  border-bottom: 4px solid #ffb347;
 }
 
+/* Contenido principal */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -21,11 +28,13 @@ main {
   gap: 20px;
 }
 
+/* Sección principal del formulario */
 .menu, .galeria {
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
   padding: 20px;
+  backdrop-filter: blur(5px);
 }
 
 .menu {
@@ -42,13 +51,20 @@ main {
   width: 90%;
   border-radius: 12px;
   margin: 10px 0;
+  transition: transform 0.3s ease;
 }
 
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* Campos del formulario */
 fieldset {
   border: 1px solid #ddd;
   border-radius: 10px;
   margin-bottom: 15px;
   padding: 10px;
+  background-color: #fffaf5;
 }
 
 legend {
@@ -56,6 +72,7 @@ legend {
   font-weight: bold;
 }
 
+/* Botones */
 button {
   background-color: #ff7b00;
   color: white;
@@ -64,23 +81,30 @@ button {
   padding: 10px 20px;
   cursor: pointer;
   font-size: 1em;
+  transition: background 0.3s ease;
 }
 
 button:hover {
   background-color: #ff9933;
 }
 
+/* Resultado */
 .resultado {
   margin-top: 15px;
   background: #fff1e6;
   padding: 10px;
   border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
 }
 
+/* Pie de página */
 footer {
-  background-color: #ff7b00;
+  background-color: rgba(255, 123, 0, 0.9);
   color: white;
   text-align: center;
   padding: 10px 0;
   margin-top: 20px;
+  font-size: 0.9em;
+  border-top: 3px solid #ffb347;
 }
